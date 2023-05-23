@@ -1,5 +1,3 @@
-// Made By: Ashton Biehl
-
 main()
 {
     level thread onPlayerConnect();
