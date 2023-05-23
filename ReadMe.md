@@ -6,6 +6,8 @@ Project Github: https://github.com/JezuzLizard/T6-ZM-Universal-Bank
 
 Discord: Ashton Biehl#6969
 
+This adds the ablity to see your Bank amount on screen and allows the option to show other players bank
+
 1. Simply install the universal bank script from the link above
 2. Then drag the addon gsc in script/zm
 
