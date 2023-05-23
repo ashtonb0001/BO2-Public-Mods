@@ -64,7 +64,7 @@ findPlayerByName(name)
 
 show_other_player_balance(targetPlayer)
 {
-    // Create and display the HUD for the other player's bank balance
+  
     hud_bank_other = newClientHudElem(self);
     hud_bank_other.horzAlign = "topleft";
     hud_bank_other.vertAlign = "topleft";
@@ -78,13 +78,13 @@ show_other_player_balance(targetPlayer)
     hud_bank_other.alpha = 1;
     hud_bank_other setText("^7" + targetPlayer.name + "'s Bank Balance: ^2" + targetPlayer.account_value * 1000);
 
-    // Store the HUD element in the player's instance so we can remove it later
+    
     self.hud_bank_other = hud_bank_other;
 }
 
 hide_other_player_balance(targetPlayer)
 {
-    // Check if the HUD element exists and remove it
+    
     if (isDefined(self.hud_bank_other))
     {
         self.hud_bank_other destroy();
@@ -97,7 +97,7 @@ create_hud(player)
     if (!isDefined(player))
         return;
 
-    // Create the HUD element
+    
     hud_bank = newClientHudElem(player);
     hud_bank.horzAlign = "middle";
     hud_bank.vertAlign = "bottom";
@@ -110,7 +110,7 @@ create_hud(player)
     hud_bank.archived = false;
     hud_bank.alpha = 1;
 
-    // Update the bank balance
+    
     hud_bank_thread(player, hud_bank);
 }
 
